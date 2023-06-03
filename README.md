@@ -20,3 +20,5 @@ la api ver en la documentación) y cargar en cards las mismas.
 
 NOTA: la api newsapi funciona solo en forma local y no en un proyecto de producción, si
 quieren deployar el proyecto en netlify usar newsdata
+
+Nota Mauro: Reutilice el codigo que estoy empleando en ej 12, por el momento no funcionan las categorias
