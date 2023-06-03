@@ -10,7 +10,7 @@ function Noticia({ noticias }) {
               {noticia.urlToImage && <Card.Img variant="top" src={noticia.urlToImage} alt="imagen de noticia" />}
               <Card.Body>
                 <Card.Title>{noticia.title}</Card.Title>
-                <Card.Text>{noticia.description}</Card.Text>
+                <Card.Text className="text-truncate">{noticia.description}</Card.Text>
                 <Button variant="danger">Ver noticia completa</Button>
               </Card.Body>
             </Card>
