@@ -6,12 +6,14 @@ function Noticia({ noticias }) {
       <Row className="my-3">
         {noticias.map((noticia, indice) => (
           <Col md={4} lg={3} key={indice}>
-            <Card className="my-5">
+            <Card className="my-5 h-100">
               {noticia.urlToImage && <Card.Img variant="top" src={noticia.urlToImage} alt="imagen de noticia" />}
-              <Card.Body>
-                <Card.Title>{noticia.title}</Card.Title>
-                <Card.Text className="text-truncate">{noticia.description}</Card.Text>
-                <Button variant="danger">Ver noticia completa</Button>
+              <Card.Body className="d-flex flex-column">
+                <div className="mb-auto">
+                  <Card.Title>{noticia.title}</Card.Title>
+                  <Card.Text>{noticia.description}</Card.Text>
+                </div>
+                <Button variant="danger" className="mt-auto">Ver noticia completa</Button>
               </Card.Body>
             </Card>
           </Col>
