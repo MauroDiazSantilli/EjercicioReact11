@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-    <section className='my-5'>
+    <section className='my-5 main'>
       <Titulo></Titulo>
       <Formulario></Formulario>
     </section>
