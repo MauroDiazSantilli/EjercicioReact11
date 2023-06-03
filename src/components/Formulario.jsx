@@ -28,7 +28,7 @@ function Formulario() {
     <Container className="my-5 border border-secondary border-1 ">
       <Form>
         <Form.Group className="my-5 border-secondary d-flex justify-content-center" controlId="categoriaForm">
-          <Form.Label className="d-inline fs-5">Buscar por Categoria: </Form.Label>
+          <Form.Label className="d-inline fs-5">Buscar por categoria: </Form.Label>
           <Form.Select className="ms-4 mb-5 w-50" aria-label="Categoria" onChange={(e) => setCategoria(e.target.value)} value={categoria}>
                 <option value=''>Categorías</option>
                 <option value="general">General</option>
